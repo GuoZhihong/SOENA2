@@ -1,0 +1,84 @@
+<!--
+// ------------------------------------------------------------------------------
+// Assignment (2)
+// Written by: Zhihong Guo
+// For SOEN 287 Section (2164) – Winter 2017
+// -----------------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<!-- Question 3.html 
+     A script in the head section.
+	 This script will calculate the square and cube values from 0 to 5 and display in a table.
+-->
+<html lang = "en">
+  <head>
+    <title> Question 3.html </title>
+    <meta charset = "utf-8" />
+	<style>
+	table{width:50%;text-align:center;}
+	</style>
+	<script type = "text/javascript">
+		// initial square and cube values, and calculate the values from 0 to 5 one by one.
+		var square = 2;
+		var cube = 3;
+		var square0 = Math.pow(0,square);
+		var square1 = Math.pow(1,square);
+		var square2 = Math.pow(2,square);
+		var square3 = Math.pow(3,square);
+		var square4 = Math.pow(4,square);
+		var square5 = Math.pow(5,square);
+		var cube0 = Math.pow(0,cube);
+		var cube1 = Math.pow(1,cube);
+		var cube2 = Math.pow(2,cube);
+		var cube3 = Math.pow(3,cube);
+		var cube4 = Math.pow(4,cube);
+		var cube5 =Math.pow(5,cube);
+	</script>
+  </head>
+  <body>
+  	<script type = "text/javascript">
+		//display none-calculated part
+		document.write("<table border ='1'>",
+		"<tr>",
+			"<td>number</td>",
+			"<td>square</td>",
+			"<td>cube</td>",
+		"</tr>");
+		
+		//display the rest with the values calculated from header section.
+		document.write(
+			"<tr>",
+				"<td>0</td>",
+				"<td>"+square0+"</td>",
+				"<td>"+cube0+"</td>",
+			"</tr>",
+			"<tr>",
+				"<td>1</td>",
+				"<td>"+square1+"</td>",
+				"<td>"+cube1+"</td>",
+			"</tr>",
+			"<tr>",
+				"<td>2</td>",
+				"<td>"+square2+"</td>",
+				"<td>"+cube2+"</td>",
+			"</tr>",
+			"<tr>",
+				"<td>3</td>",
+				"<td>"+square3+"</td>",
+				"<td>"+cube3+"</td>",
+			"</tr>",
+			"<tr>",
+				"<td>4</td>",
+				"<td>"+square4+"</td>",
+				"<td>"+cube4+"</td>",
+			"</tr>",
+			"<tr>",
+				"<td>5</td>",
+				"<td>"+square5+"</td>",
+				"<td>"+cube5+"</td>",
+			"</tr>",
+		"</table>"
+		)
+	</script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+#header{
+	background-color:brown; 
+	width:300px;
+	border:10px solid white;
+	padding:10px;
+	margin:50px;
+	color:white;
+}
+
+table {border: 15px dotted blue;Margin:0.25in;}
+th
+{		
+		background-color:yellow; 
+		color:red;
+		padding:10px;
+}
+td.leftTop
+{
+		background-color:pink; 
+		padding:10px;
+		border-color:pink;
+}
+td.rightTop{
+		background-color:green;
+		padding:10px;
+		border-color:red;
+}
+td.leftBottom{
+		background-color:white;
+		padding:10px;
+		border-color:white;
+}
+td.rightBottom{
+		background-color:grey;
+		padding:10px;
+		border-color:purple;
+}
+ol.uppercase{list-style-type: upper-roman;}
+	ul.face{list-style-image : url(http://nsidc.org/sites/nsidc.org/files/images/news/facebook-25px.png)}
+	ul.default{color:red;}
+ol.Armenian{list-style-type: armenian;}
+	ul.square{list-style-type: square;color:purple;}
+	ul.youtube{list-style-image : url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9P1o_yELwAZ89O7975biI_jEHo7hT4_T6ZalXn8VEvEUDySkJ)}
+p{color:yellow;}
+a:link{color:red}
+a:visited{color:blue}
+a:hover{color:yellow}
+a:active{color:green}
+body{
+background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1486946117918&di=a119daa372cb660c05d2180f61259961&imgtype=0&src=http%3A%2F%2Fwww.chinadaily.com.cn%2Fsports%2Fimages%2Fattachement%2Fjpg%2Fsite1%2F20170203%2Fa41f726b055919fe224c0a.jpg");
+background-repeat:repeat;
+background-color:green;
+}
+

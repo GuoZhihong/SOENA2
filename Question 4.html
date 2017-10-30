@@ -1,0 +1,45 @@
+<!--
+// ------------------------------------------------------------------------------
+// Assignment (2)
+// Written by: Zhihong Guo
+// For SOEN 287 Section (2164) – Winter 2017
+// -----------------------------------------------------------------------------
+-->
+<!DOCTYPE html>
+<!-- Question 4.html
+Create an array of 5 names, 
+and use a function NbnamePattern(names) to see how many numbers of names are ending with y or ie,
+then display the result.
+Function is declared in the head section and test driver is inside the body section.
+-->
+<html lang = "en">
+  <head>
+    <title> Question 4.html </title>
+    <meta charset = "utf-8" />
+	<script type = "text/javascript">
+		function NbnamePattern(names){// function with an array of names(Strings).
+			for(var i = 0;i < names.length;i++){
+				varposition1 = names[i].search(/ie$/); //search() method to search names ending with ie.
+				varposition2 = names[i].search(/y$/); //search() method to search names ending with y.
+				
+				/*condition to increase counter for the output,
+				-1 means above search() methods failed to return position in the object string of the pattern.*/
+				if(varposition1 != -1 || varposition2 != -1){ 
+					counter++;
+				}
+			}
+			return counter;// return final counter value after the loop.
+		}
+    </script>
+  </head>
+  <body>
+  	<script type = "text/javascript">
+		 names = new Array("freddie","bob","mieke","yahoo2","georgey");//the declaration and initialization of the array.
+		 counter = 0;// counter to show how many numbers lie in this requirement.
+		 var varposition1;
+		 var varposition2;
+		 NbnamePattern(names);//the invocation of the function
+		 document.write("The number of names having these two patterns(/ie$/) and (/y$/) in the array is : " + counter + "<br />");//display the result.
+    </script>
+  </body>
+</html>
